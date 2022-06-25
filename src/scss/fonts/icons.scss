@@ -1,0 +1,36 @@
+%ic {
+	font-family: "iconfonts";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+.icon-heart:before { content: '\e800'; } /* '' */
+.icon-arr-btm:before { content: '\e801'; } /* '' */
+.icon-logo:before { content: '\e802'; } /* '' */
+.icon-logout:before { content: '\e803'; } /* '' */
+.icon-search:before { content: '\e804'; } /* '' */
+.icon-twit:before { content: '\e805'; } /* '' */
+.icon-user:before { content: '\e806'; } /* '' */
+.icon-utb:before { content: '\e807'; } /* '' */
+.icon-vk:before { content: '\e808'; } /* '' */
+.icon-vopros:before { content: '\e809'; } /* '' */
+.icon-wapp:before { content: '\e80a'; } /* '' */
+.icon-arr-left:before { content: '\e80b'; } /* '' */
+.icon-arr-right:before { content: '\e80c'; } /* '' */
+.icon-cart:before { content: '\e80d'; } /* '' */
+.icon-clock:before { content: '\e80e'; } /* '' */
+.icon-email:before { content: '\e80f'; } /* '' */
+.icon-fb:before { content: '\e810'; } /* '' */
+.icon-ingr:before { content: '\e812'; } /* '' */
+.icon-krestik:before { content: '\e813'; } /* '' */

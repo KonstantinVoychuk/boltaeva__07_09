@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Главная" })
+
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <!--Слайдер главной страницы -->
+        <!-- Оболочка слайдера -->
+        <div class="main-pages__slider swiper">
+          <!-- Двигающееся часть слайдера -->
+          <div class="main-pages__wrapper swiper-wrapper">
+            <!-- Слайд -->
+            <div class="main-pages__slide swiper-slide">
+              <img src="img/main/slaider_main/main_pg_sl1.png" alt="" />
+            </div>
+            <div class="main-pages__slide swiper-slide">
+              <img src="img/main/slaider_main/main_pg_sl2.png" alt="" />
+            </div>
+            <div class="main-pages__slide swiper-slide">
+              <img src="img/main/slaider_main/main_pg_sl3.jpg" alt="" />
+            </div>
+            <div class="main-pages__slide swiper-slide">
+              <img src="img/main/slaider_main/main_pg_sl4.jpg" alt="" />
+            </div>
+            <div class="main-pages__slide swiper-slide">
+              <img src="img/main/slaider_main/main_pg_sl5.jpg" alt="" />
+            </div>
+          </div>
+          <!-- Если нужна пагинация -->
+          <div class="swiper-pagination"></div>
+          <!-- Если нужна навигация (влево/вправо) -->
+          <button
+            type="button"
+            class="swiper-button-prev icon-arr-left"
+          ></button>
+          <button
+            type="button"
+            class="swiper-button-next icon-arr-right"
+          ></button>
+          <!-- Если нужен скролбар -->
+        </div>
+        <div class="slid">
+          <section class="care__body">
+            <div class="care__card care-card">
+              <img
+                src="img/main/slaider_category/care.jpg"
+                alt="A random image from Placeimg"
+              />
+              <div class="card-shine">
+                <div class="card-shine__title">Care</div>
+                <!-- /.card-shine__title -->
+                <div class="card-shine__nav">
+                  <button
+                    type="button"
+                    class="swiper-button-prev1 icon-arr-left"
+                  ></button>
+                  <button
+                    type="button"
+                    class="swiper-button-next1 icon-arr-right"
+                  ></button>
+                </div>
+                <!-- /.card-shine__nav -->
+              </div>
+            </div>
+            <!-- /.category__item -->
+            <!-- Оболочка слайдера -->
+            <div class="care__slider swiper">
+              <!-- Двигающееся часть слайдера -->
+              <div class="care__wrapper swiper-wrapper">
+                <!-- Слайд -->
+                <div class="swiper-slide care__slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/1.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">51 €</div>
+                      <!-- /.swiper-slide__price -->
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/2.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">52 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/3.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">53 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/1.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">54 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/2.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">55 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/3.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">56 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Если нужна навигация (влево/вправо) -->
+              </div>
+            </div>
+          </section>
+          <section class="beauty__body">
+            <!-- /.category__item -->
+            <!-- Оболочка слайдера -->
+            <div class="beauty__slider swiper">
+              <!-- Двигающееся часть слайдера -->
+              <div class="beauty__wrapper swiper-wrapper">
+                <!-- Слайд -->
+                <div class="beauty__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/1.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">51 €</div>
+                      <!-- /.swiper-slide__price -->
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/2.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">52 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/3.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">53 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/1.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">54 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/2.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">55 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/3.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">56 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Если нужна навигация (влево/вправо) -->
+              </div>
+            </div>
+            <div class="beauty__card care-card">
+              <img
+                src="img/main/slaider_category/beauty.jpg"
+                alt="A random image from Placeimg"
+              />
+              <div class="card-shine">
+                <div class="card-shine__title">Beauty</div>
+                <!-- /.card-shine__title -->
+                <div class="card-shine__nav">
+                  <button
+                    type="button"
+                    class="swiper-button-prev2 icon-arr-left"
+                  ></button>
+                  <button
+                    type="button"
+                    class="swiper-button-next2 icon-arr-right"
+                  ></button>
+                </div>
+                <!-- /.card-shine__nav -->
+              </div>
+            </div>
+          </section>
+          <section class="brows__body">
+            <div class="brows__card care-card">
+              <img
+                src="img/main/slaider_category/brows.jpg"
+                alt="A random image from Placeimg"
+              />
+              <div class="card-shine">
+                <div class="card-shine__title">Brows</div>
+                <!-- /.card-shine__title -->
+                <div class="card-shine__nav">
+                  <button
+                    type="button"
+                    class="swiper-button-prev3 icon-arr-left"
+                  ></button>
+                  <button
+                    type="button"
+                    class="swiper-button-next3 icon-arr-right"
+                  ></button>
+                </div>
+                <!-- /.card-shine__nav -->
+              </div>
+            </div>
+            <!-- /.category__item -->
+            <!-- Оболочка слайдера -->
+            <div class="brows__slider swiper">
+              <!-- Двигающееся часть слайдера -->
+              <div class="brows__wrapper swiper-wrapper">
+                <!-- Слайд -->
+                <div class="brows__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category//1.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">51 €</div>
+                      <!-- /.swiper-slide__price -->
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/2.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">52 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/3.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">53 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/1.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">54 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/2.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">55 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Слайд -->
+                <div class="care__slide swiper-slide">
+                  <div class="swiper-slide__card">
+                    <img
+                      src="img/main/slaider_category/3.jpg"
+                      alt="A random image from Placeimg"
+                    />
+                    <div class="swiper-slide__shine">
+                      <div class="swiper-slide__title">Perfect brows</div>
+                      <!-- /.swiper-slide__title -->
+                      <div class="swiper-slide__price">56 €</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Если нужна навигация (влево/вправо) -->
+              </div>
+            </div>
+          </section>
+        </div>
+        <!--Раздел "Уникальная продукция" -------------------------------------------------- -->
+        <section class="product-unique">
+          <div class="product-unique-img">
+            <img src="img/main/uniqui.svg" alt="" />
+          </div>
+          <div class="product-unique-content">
+            <div class="icon-logo product-unique-content__title"></div>
+            <div class="product-unique-content__slogan">
+              <p>
+                Each Boltaeva brand product is truly unique - everything is
+                thought out to the smallest detail.
+              </p>
+            </div>
+            <div class="product-unique-content__text">
+              <p>
+                The brand seeks to build respect among the audience for its
+                products, so that the presence of the company's products is a
+                sign of prestige, since the focus of the business is focused on
+                exclusive sales, but not on the mass market.
+              </p>
+            </div>
+            <div class="product-unique-content__pdps block-pdps">
+              <div class="block-pdps__item">
+                <p class="block-pdps__item-mame">Zara Boltaeva</p>
+                <p class="block-pdps__item-status">CEO, Founder</p>
+              </div>
+              <img src="img/pdps_light.svg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!--Галереи категорий товаров-------------------------------------------------- -->
+
+        <!--Раздел "Сообщество"-------------------------------------------------------- -->
+        <section class="society">
+          <div class="society__slogan">
+            <p>
+              Boltaeva - this is a real society of girls who show love to
+              themselves
+            </p>
+            <div class="society__ingr">
+              <div class="society__ingr-item">
+                <a class="icon-ingr" href=""></a>
+                <a href="">Instagram</a>
+              </div>
+            </div>
+          </div>
+          <div class="society__photo">
+            <img src="img/main/society/Rectangle 18.svg" alt="" />
+            <img src="img/main/society/Rectangle 19.svg" alt="" />
+            <img src="img/main/society/Rectangle 20.svg" alt="" />
+            <img src="img/main/society/Rectangle 21.svg" alt="" />
+            <img src="img/main/society/Rectangle 18.svg" alt="" />
+            <img src="img/main/society/Rectangle 19.svg" alt="" />
+            <img src="img/main/society/Rectangle 20.svg" alt="" />
+            <img src="img/main/society/Rectangle 21.svg" alt="" />
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

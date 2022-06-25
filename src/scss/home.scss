@@ -1,0 +1,309 @@
+//====================================================================================================
+.page {
+}
+.main-pages {
+  &__slider {
+  }
+  &__wrapper {
+    img {
+      width: 100%;
+      @include adaptiveValue("height", 900, 598, 1200, 768, 1);
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+  &__slide {
+  }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-scrollbar {
+}
+
+//=======CARE============================================================================
+.care__slider {
+  padding-right: 10px;
+}
+.care__body,
+.beauty__body,
+.brows__body {
+  display: flex;
+  height: rem(450);
+  padding: rem(10) rem(5);
+  margin: 0 auto;
+}
+.slid {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.care {
+  &__body {
+  }
+  /* .care__wrapper */
+  &__wrapper {
+    margin-left: rem(20);
+    @media (max-width: $mobileSmall) {
+      margin: 0;
+    }
+  }
+  /* .care__slide */
+  &__slide {
+    &:hover {
+      box-shadow: 0px 14px 12px 0px rgba(0, 0, 0, 0.3);
+      filter: brightness(1.1) contrast(0.95) saturate(1);
+      transform: rotateX(3deg) translateZ(15px);
+    }
+  }
+}
+
+.card-shine {
+  &__title {
+    font-family: "CeraPro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    position: absolute;
+    bottom: 23px;
+    left: 30px;
+  }
+  &__nav {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    background: rgba(136, 136, 136, 0.3);
+    border-radius: 10px;
+    padding: 14px 12px;
+    backdrop-filter: blur(14px);
+    @media (max-width: $mobileSmall) {
+      display: none;
+    }
+  }
+}
+.swiper-slide {
+  /* .swiper-slide__card */
+  &__card {
+    position: relative;
+  }
+  /* .swiper-slide__shine */
+  &__shine {
+    padding: 0 rem(22);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 22px;
+    width: 100%;
+    line-height: 120%;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+  }
+}
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-button-prev1,
+.swiper-button-next1,
+.swiper-button-prev2,
+.swiper-button-next2,
+.swiper-button-prev3,
+.swiper-button-next3 {
+  font-size: rem(17);
+  background: none;
+  color: #fff;
+}
+.swiper-button-disabled {
+  color: $mainColor;
+}
+.care-card {
+  min-width: rem(310);
+  background-color: gainsboro;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: rem(6);
+  cursor: pointer;
+  overflow: hidden;
+  transition-duration: 0.4s;
+  transition-property: box-shadow, filter, transform;
+  transition-timing-function: cubic-bezier(0, 0.73, 0.48, 1);
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  position: relative;
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+//=======CARE============================================================================
+//=======beauty============================================================================
+.beauty {
+  &__card {
+    position: relative;
+    margin-left: rem(20);
+    @media (max-width: $mobileSmall) {
+      margin: 0;
+    }
+  }
+}
+.brows__wrapper {
+  margin-left: rem(20);
+  @media (max-width: $mobileSmall) {
+    margin: 0;
+  }
+}
+.brows__body {
+}
+
+//=======beauty============================================================================
+
+// Стили раздела "Уникальная продукция" ---------------------------------------------------------------
+.product-unique {
+  display: flex;
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+.product-unique-img {
+  width: 100%;
+  order: 1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: 992px) {
+    order: 2;
+  }
+}
+.product-unique-content {
+  display: block;
+  max-width: 50%;
+  order: 2;
+  background: #f5ece3;
+  padding: 200px 8% 54px 8%;
+  @media (max-width: 992px) {
+    max-width: 100%;
+    order: 1;
+    padding: 90px 5% 54px 5%;
+  }
+  &__title {
+    font-size: 16px;
+    color: #ac8f78;
+  }
+
+  &__slogan {
+    color: $mainColor;
+    padding: 70px 0 35px 0;
+    @include adaptiveValue("font-size", 32, 22, 992, 480, 1);
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    @media (max-width: 992px) {
+      padding: 30px 0 20px 0;
+      font-size: 22px;
+    }
+  }
+
+  &__text {
+    padding-bottom: 52px;
+    @include adaptiveValue("font-size", 18, 15, 992, 320, 1);
+    line-height: 180%;
+    letter-spacing: -0.02em;
+  }
+
+  &__pdps {
+  }
+}
+.block-pdps {
+  display: flex;
+  gap: 35px;
+
+  &__item {
+  }
+
+  &__item-mame {
+    @include adaptiveValue("font-size", 24, 18, 480, 320, 1);
+    line-height: 130%;
+    letter-spacing: -0.02em;
+  }
+
+  &__item-status {
+    padding-top: 2%;
+    font-size: 13px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+  }
+}
+
+// Стили раздела "Сообщество" ---------------------------------------------------------------
+
+.society {
+  background: #f5ece3;
+  &__slogan {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 135px 0 100px 0;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      padding: 90px 0 50px 0;
+    }
+    p {
+      width: 50%;
+      font-size: 48px;
+      line-height: 130%;
+      padding-left: 70px;
+      @media (max-width: 992px) {
+        width: 100%;
+        @include adaptiveValue("padding-left", 50, 15, 992, 320, 1);
+        @include adaptiveValue("padding-right", 50, 15, 992, 320, 1);
+        @include adaptiveValue("font-size", 48, 30, 992, 320, 1);
+      }
+    }
+  }
+
+  &__ingr {
+    padding-right: 70px;
+    @media (max-width: 992px) {
+      padding-right: 0px;
+    }
+  }
+  &__ingr-item {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    padding: 20px 90px;
+    border-radius: 30px;
+    background: #eee4da;
+  }
+
+  &__photo {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    @media (max-width: 992px) {
+      grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    }
+    gap: 20px;
+    padding: 0 5% 120px 5%;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.icon-ingr {
+}
+
+//====================================================================================================
