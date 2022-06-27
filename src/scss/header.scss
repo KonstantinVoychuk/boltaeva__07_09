@@ -2,15 +2,14 @@
 .header {
 	position: absolute;
 	width: 100%;
-	color: #fff;
+	color: #555;
 	}
-	.planka {
+.planka {
 		position: fixed;
-		background: #000;
-		background: rgb(2,0,36);
-		background: linear-gradient(rgba(51, 51, 51, 0.7) 0%, rgba(255, 255, 255, 0.01) 70%);
+		background: #F5ECE3;
 		width: 100%;
-		height: 150px;
+		height: 120px;
+		border-bottom: 1px solid rgb(211, 211, 211);
 		z-index: 2;
 	}
 	.main-menu {
@@ -40,33 +39,7 @@
 			@include adaptiveValue("padding-right",24,4,1920,768,1);
 		}
 	}
-	.slogan-block {
-		display: flex;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		justify-content: center;
-		z-index: 2;
-	}
-	.slogan {
-		display: block;
-		position: relative;
-	@include adaptiveValue("top",450,268,1920,768,1);
-	@include adaptiveValue("width",420,280,1920,768,1);
-		margin: 0 auto;
-		@include adaptiveValue("font-size",48,32,1920,768,1);
-		color: #fff;
-		z-index: 1;
-		@media (max-width: $mobile) {
-			top: 268px;
-		}
-	}
-	.slogan p {
-		padding-bottom: 14px;
-		border-bottom: 2px solid #fff;
-	}
-	
+
 	//====================================================================================================
 	
 	//Burger (кнопка)
@@ -80,6 +53,7 @@
 			position: fixed;
 			width: rem(24);
 			height: rem(12);
+			background: none;
 			cursor: pointer;
 			z-index: 5;
 			span {width: 0;}
@@ -91,10 +65,7 @@
 				position: absolute;
 				width: 100%;
 				height: rem(2);
-				background: rgb(255, 255, 255);
-				.menu-open & {
-					background: rgb(83, 83, 83);
-				}
+				background: #555;
 			}
 			&::before {
 				top: 0;
@@ -127,6 +98,9 @@
 	
 	//Классы элементов бургера ------------------------------------------------------------------------
 	
+	.menu__body {
+		display: none;
+	}
 	// Для закрытого бургера -----------------------------------------------------------------
 	@media (max-width: $mobile) {
 		.main-menu__left, .link-not-burger {
@@ -135,7 +109,9 @@
 		.main-menu__logo {
 			@include adaptiveValue("padding-left",280,60,768,320,1);
 		}
-		
+		.menu__body {
+			display: block;
+		}
 	//Для открытого бургера -------------------------------------------------------------
 	
 	.main-menu-burger {
@@ -158,7 +134,7 @@
 		color: $mainColor;
 	}
 
-		.header {
+.header {
 			&__menu {
 				position: absolute;
 				top: 0;
@@ -166,7 +142,7 @@
 				width: 100%;
 			}
 		}
-		.menu {
+.menu {
 			&__icon {
 				top: 50px;
 				left: 30px;

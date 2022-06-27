@@ -39,13 +39,11 @@ function initSliders() {
 			spaceBetween: 0,
 			autoHeight: true,
 			speed: 800,
-
 			//touchRatio: 0,
 			//simulateTouch: false,
 			//loop: true,
 			//preloadImages: false,
 			//lazy: true,
-
 			navigation: {
         prevEl: ".swiper-button-prev",
         nextEl: ".swiper-button-next",
@@ -56,16 +54,11 @@ function initSliders() {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-			
-
 			// Пагинация
-			
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
 			},
-			
-
 			// Скроллбар
 			on: {
 			}
@@ -158,12 +151,86 @@ function initSliders3() {
     });
   }
 }
+
+
+
+function initSliders4min() {
+	// Перечень слайдеров
+	// Проверяем, есть ли слайдер на странице
+	if (document.querySelector('.slider-product-min__slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.slider-product-min__slider', { // Указываем скласс нужного слайдера
+
+		});
+	}
+}
+
+
+
+
+
+
+
+function initSliders4() {
+	// Перечень слайдеров
+	// Проверяем, есть ли слайдер на странице
+	if (document.querySelector('.slider-product__slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.slider-product__slider', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation, Pagination, Autoplay, EffectFade],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			autoHeight: true,
+			speed: 800,
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+		
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			// Пагинация
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			// Скроллбар
+			on: {
+			},
+
+			thumbs: {
+				swiper:
+			{
+				el:'.slider-product-min__slider',
+				slidesPerView: 5,
+			}
+			},
+		});
+	}
+}
+
+
+
+
+
 window.addEventListener("load", function (e) {
 	// Запуск инициализации слайдеров
 	initSliders();
 	initSliders1();
   initSliders2();
   initSliders3();
+  initSliders4();
+  initSliders4min();
+//  initSliders4min();
 	// Запуск инициализации скролла на базе слайдера (по классу swiper_scroll)
 	//initSlidersScroll();
 });
