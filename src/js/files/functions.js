@@ -420,6 +420,7 @@ export function menuInit() {
 		});
 	};
 }
+
 export function menuOpen() {
 	bodyLock();
 	document.documentElement.classList.add("menu-open");
@@ -428,6 +429,31 @@ export function menuClose() {
 	bodyUnlock();
 	document.documentElement.classList.remove("menu-open");
 }
+
+// второй бургер ---------------------------------------------
+
+export function menuMainInit() {
+	if (document.querySelector(".icon-menu-main")) {
+		document.addEventListener("click", function (e) {
+			if (bodyLockStatus && e.target.closest('.icon-menu-main')) {
+				bodyLockToggle();
+				document.documentElement.classList.toggle("menu-main-open");
+			}
+		});
+	};
+}
+
+export function menuMainOpen() {
+	bodyLock();
+	document.documentElement.classList.add("menu-main-open");
+}
+export function menuMainClose() {
+	bodyUnlock();
+	document.documentElement.classList.remove("menu-main-open");
+}
+
+
+
 // Модуль "показать еще" =======================================================================================================================================================================================================================
 /*
 Документация по работе в шаблоне: https://template.fls.guru/template-docs/modul-pokazat-eshhjo.html

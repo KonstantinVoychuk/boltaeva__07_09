@@ -128,8 +128,11 @@ body {
 @import "common";
 
 // Подключение стилей отдельных блоков
+@import "header_main";
 @import "header";
 @import "footer";
 
 // Подключение стилей отдельных страниц
 @import "home";
+@import "category";
+@import "product";
