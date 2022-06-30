@@ -1,98 +1,90 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"Galery" })
+@@include('html/_head.htm',{ "title":"Galery" })
 
 <body>
-	<div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page">
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+    	<div class="slayder__body">
+    		      <!-- Оболочка слайдера товара "главный слайдер"-->
+	      <div class="swiper slider-product__slider">
+	        <!-- Двигающаяся часть слайдера -->
+	        <div class="slider-product__wrapper swiper-wrapper">
+	          <!-- Слайд -->
+	          <div class="slider-product__slide swiper-slide">
+	            <img src="img/main/slaider_category/1.jpg" alt="">
+	          </div>
+	          <div class="slider-product__slide swiper-slide">
+	            <img src="img/main/slaider_category/2.jpg" alt="">
+	          </div>
+	          <div class="slider-product__slide swiper-slide">
+	            <img src="img/main/slaider_category/3.jpg" alt="">
+	          </div>
+	          <div class="slider-product__slide swiper-slide">
+	            <img src="img/main/slaider_category/1.jpg" alt="">
+	          </div>
+	          <div class="slider-product__slide swiper-slide">
+	            <img src="img/main/slaider_category/2.jpg" alt="">
+	          </div>
+	        </div>
+	        <!-- Если нужна навигация (влево/вправо) -->
+	        <button type="button" class="swiper-button-prev4"></button>
+	        <button type="button" class="swiper-button-next4"></button>
+	        <!-- Если нужен скролбар -->
+	      </div>
+      <!-- Оболочка слайдера мниатюрных карттинок у главного слайдера товаров-->
+	      <div class="swiper slider-product-min__slider">
+	        <!-- Двигающееся часть слайдера -->
+	        <div class="slider-product-min__wrapper swiper-wrapper">
+	          <!-- Слайд -->
+	          <div class="slider-product-min__slide swiper-slide">
+	            <img src="img/main/slaider_category/1.jpg" alt="">
+	          </div>
+	          <div class="slider-product-min__slide swiper-slide">
+	            <img src="img/main/slaider_category/2.jpg" alt="">
+	          </div>
+	          <div class="slider-product-min__slide swiper-slide">
+	            <img src="img/main/slaider_category/3.jpg" alt="">
+	          </div>
+	          <div class="slider-product-min__slide swiper-slide">
+	            <img src="img/main/slaider_category/1.jpg" alt="">
+	          </div>
+	          <div class="slider-product-min__slide swiper-slide">
+	            <img src="img/main/slaider_category/2.jpg" alt="">
+	          </div>
+	        </div>
+	      </div>
+    	</div>
+    	<!-- /.slayder__body -->
 
-<!-- Оболочка слайдера товара "главный слайдер"-->
-<div class="slider-product__slider swiper">
-	<!-- Двигающаяся часть слайдера -->
-	<div class="slider-product__wrapper swiper-wrapper">
-		<!-- Слайд -->
-		<div class="slider-product__slide swiper-slide">
-			<img src="img/main/slaider_category/1.jpg" alt="">
-		</div>
-		<div class="slider-product__slide swiper-slide">
-			<img src="img/main/slaider_category/2.jpg" alt="">
-		</div>
-		<div class="slider-product__slide swiper-slide">
-			<img src="img/main/slaider_category/3.jpg" alt="">
-		</div>
-		<div class="slider-product__slide swiper-slide">
-			<img src="img/main/slaider_category/1.jpg" alt="">
-		</div>
-		<div class="slider-product__slide swiper-slide">
-			<img src="img/main/slaider_category/2.jpg" alt="">
-		</div>
-	</div>
-	<!-- Если нужна пагинация -->
-	<div class="swiper-pagination"></div>
-	<!-- Если нужна навигация (влево/вправо) -->
-	<button type="button" class="swiper-button-prev4"></button>
-	<button type="button" class="swiper-button-next4"></button>
-	<!-- Если нужен скролбар -->
-	<div class="swiper-scrollbar"></div>
-</div>
-
-
-
-<!-- Оболочка слайдера мниатюрных карттинок у главного слайдера товаров-->
-<div thumbsSlider="" class="slider-product-min__slider swiper">
-	<!-- Двигающееся часть слайдера -->
-	<div class="slider-product-min__wrapper swiper-wrapper">
-		<!-- Слайд -->
-		<div class="slider-product-min__slide swiper-slide">
-			<img src="img/main/slaider_category/1.jpg" alt="">
-		</div>
-		<div class="slider-product-min__slide swiper-slide">
-			<img src="img/main/slaider_category/2.jpg" alt="">
-		</div>
-		<div class="slider-product-min__slide swiper-slide">
-			<img src="img/main/slaider_category/3.jpg" alt="">
-		</div>
-		<div class="slider-product-min__slide swiper-slide">
-			<img src="img/main/slaider_category/1.jpg" alt="">
-		</div>
-		<div class="slider-product-min__slide swiper-slide">
-			<img src="img/main/slaider_category/2.jpg" alt="">
-		</div>
-	</div>
-	
-</div>
-
-
-
-
-
-        <!--Раздел "Уникальная продукция без подписи" -------------------------------------------------- -->
-			<section class="product-unique">
-				<div class="product-unique-img">
-				  <img src="img/uniqui2.svg" alt="" />
-				</div>
-				<div class="product-unique-content">
-				  <div class="icon-logo product-unique-content__title"></div>
-				  <div class="product-unique-content__slogan">
-					 <p>
-						Each Boltaeva brand product is truly unique - everything is
-						thought out to the smallest detail.
-					 </p>
-				  </div>
-				  <div class="product-unique-content__text">
-					 <p>
-						The brand seeks to build respect among the audience for its
-						products, so that the presence of the company's products is a
-						sign of prestige, since the focus of the business is focused on
-						exclusive sales, but not on the mass market.
-					 </p>
-				  </div>
-				</div>
-			 </section>
-		</main>
-      @@include('html/_footer.htm',{})
-	</div>
-	@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+      <!--Раздел "Уникальная продукция без подписи" -------------------------------------------------- -->
+      <section class="product-unique">
+        <div class="product-unique-img">
+          <img src="img/uniqui2.svg" alt="" />
+        </div>
+        <div class="product-unique-content">
+          <div class="icon-logo product-unique-content__title"></div>
+          <div class="product-unique-content__slogan">
+            <p>
+              Each Boltaeva brand product is truly unique - everything is
+              thought out to the smallest detail.
+            </p>
+          </div>
+          <div class="product-unique-content__text">
+            <p>
+              The brand seeks to build respect among the audience for its
+              products, so that the presence of the company's products is a
+              sign of prestige, since the focus of the business is focused on
+              exclusive sales, but not on the mass market.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
 </body>
+
 </html>

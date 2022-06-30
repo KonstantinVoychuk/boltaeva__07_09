@@ -164,13 +164,6 @@ function initSliders4min() {
 		});
 	}
 }
-
-
-
-
-
-
-
 function initSliders4() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на странице
@@ -191,28 +184,20 @@ function initSliders4() {
 			//loop: true,
 			//preloadImages: false,
 			//lazy: true,
-		
-			// Эффекты
-			effect: 'fade',
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
 			// Пагинация
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
 			},
-			// Скроллбар
-			on: {
-			},
-
 			thumbs: {
 				swiper:
 			{
-				el:'.slider-product-min__slider',
-				slidesPerView: 5,
-			}
+				swiper: thumbsSwiper,
+				slidesPerView: 3,
+			},
+			swiper: {
+				Swiper: '.slider-product-min__slider',
+			},
 			},
 		});
 	}
