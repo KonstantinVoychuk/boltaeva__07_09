@@ -224,8 +224,18 @@ export function formSubmit(options = { validate: true }) {
 		FLS(`[Формы]: ${message}`);
 	}
 }
+
+
+
 /* Модуь формы "колличество" */
 export function formQuantity() {
+//------------------------------------------------------------------------------------
+	// Выводим начальную стоимость при количестве 1.....
+	let price = document.getElementById ('cost');
+	// стоимость еденицы товара - прибита цифра 57.....
+	let cost = 57;
+	price.innerHTML = cost;
+//------------------------------------------------------------------------------------
 	document.addEventListener("click", function (e) {
 		let targetElement = e.target;
 		if (targetElement.closest('.quantity__button')) {
@@ -236,10 +246,32 @@ export function formQuantity() {
 				--value;
 				if (value < 1) value = 1;
 			}
+// выводим количество товара.....
 			targetElement.closest('.quantity').querySelector('input').value = value;
+// выводим стоимость товара для указанного количества ......
+			price.innerHTML = cost * value;
 		}
 	});
 }
+
+
+
+export function controlPg() {
+	document.addEventListener("DOMContentLoaded", loadPg )
+let control = document.readyState;
+function loadPg() {
+console.log(control);
+}
+
+
+//	document.addEventListener("click", function (e) {
+//		let btnElem = e.target;
+//		console.log(btnElem);
+//	})
+
+}
+
+
 /* Модуь звездного рейтинга */
 export function formRating() {
 	const ratings = document.querySelectorAll('.rating');
