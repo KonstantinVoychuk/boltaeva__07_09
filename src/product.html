@@ -3,64 +3,79 @@
   @@include('html/_head.htm',{ "title":"Galery" })
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper pg__product">
       @@include('html/_header.htm',{})
       <main class="page">
 
-<!-- Оболочка слайдера товара "главный слайдер"-->
-<div class="slider-product__slider swiper">
-	<!-- Двигающаяся часть слайдера -->
-	<div class="slider-product__wrapper swiper-wrapper">
+<!-- Оболочка главного слайдера -->
+<div class="product-page__slider swiper">
+	<!-- Двигающееся часть слайдера -->
+	<div class="product-page__wrapper swiper-wrapper">
 		<!-- Слайд -->
-		<div class="slider-product__slide swiper-slide">
-			<img src="img/main/slaider_category/1.jpg" alt="">
+		<div class="product-page__slide swiper-slide">
+			<img src="img/main/slaider_category/1.jpg" alt="" />
 		</div>
-		<div class="slider-product__slide swiper-slide">
-			<img src="img/main/slaider_category/2.jpg" alt="">
+		<div class="product-page__slide swiper-slide">
+			<img src="img/main/slaider_category/2.jpg" alt="" />
 		</div>
-		<div class="slider-product__slide swiper-slide">
-			<img src="img/main/slaider_category/3.jpg" alt="">
+		<div class="product-page__slide swiper-slide">
+			<img src="img/main/slaider_category/3.jpg" alt="" />
 		</div>
-		<div class="slider-product__slide swiper-slide">
-			<img src="img/main/slaider_category/1.jpg" alt="">
+		<div class="product-page__slide swiper-slide">
+			<img src="img/main/slaider_category/1.jpg" alt="" />
 		</div>
-		<div class="slider-product__slide swiper-slide">
-			<img src="img/main/slaider_category/2.jpg" alt="">
+		<div class="product-page__slide swiper-slide">
+			<img src="img/main/slaider_category/2.jpg" alt="" />
 		</div>
 	</div>
 	<!-- Если нужна пагинация -->
 	<div class="swiper-pagination"></div>
 	<!-- Если нужна навигация (влево/вправо) -->
-	<button type="button" class="swiper-button-prev4"></button>
-	<button type="button" class="swiper-button-next4"></button>
+	<button type="button" class="swiper-button-prev-ppg icon-arr-left"></button>
+	<button type="button" class="swiper-button-next-ppg icon-arr-right"></button>
 	<!-- Если нужен скролбар -->
 	<div class="swiper-scrollbar"></div>
 </div>
 
 
 
-<!-- Оболочка слайдера мниатюрных карттинок у главного слайдера товаров-->
-<div thumbsSlider="" class="slider-product-min__slider swiper">
+<!-- Оболочка мини слайдера -->
+<div class="product-page-min__slider swiper">
 	<!-- Двигающееся часть слайдера -->
-	<div class="slider-product-min__wrapper swiper-wrapper">
+	<div class="product-page-min__wrapper swiper-wrapper">
 		<!-- Слайд -->
-		<div class="slider-product-min__slide swiper-slide">
-			<img src="img/main/slaider_category/1.jpg" alt="">
+		<div class="product-page-min__slide swiper-slide">
+			<img src="img/main/slaider_category/1.jpg" alt="" />
 		</div>
-		<div class="slider-product-min__slide swiper-slide">
-			<img src="img/main/slaider_category/2.jpg" alt="">
+		<div class="product-page-min__slide swiper-slide">
+			<img src="img/main/slaider_category/2.jpg" alt="" />
 		</div>
-		<div class="slider-product-min__slide swiper-slide">
-			<img src="img/main/slaider_category/3.jpg" alt="">
+		<div class="product-page-min__slide swiper-slide">
+			<img src="img/main/slaider_category/3.jpg" alt="" />
 		</div>
-		<div class="slider-product-min__slide swiper-slide">
-			<img src="img/main/slaider_category/1.jpg" alt="">
+		<div class="product-page-min__slide swiper-slide">
+			<img src="img/main/slaider_category/1.jpg" alt="" />
 		</div>
-		<div class="slider-product-min__slide swiper-slide">
-			<img src="img/main/slaider_category/2.jpg" alt="">
+		<div class="product-page-min__slide swiper-slide">
+			<img src="img/main/slaider_category/2.jpg" alt="" />
 		</div>
 	</div>
-	
+</div>
+
+
+
+
+<div class="quantity">
+	<button type="button" class="quantity__button quantity__button_minus"></button>
+	<div class="quantity__input">
+		<input autocomplete="off" type="text" name="form[]" value="1">
+	</div>
+	<button type="button" class="quantity__button quantity__button_plus"></button>
+</div>
+<div class="total-price">
+	<p>Общая стоимость:</p>
+	<p id="cost"></p>
+	<p>&#8364;</p>
 </div>
 
 
