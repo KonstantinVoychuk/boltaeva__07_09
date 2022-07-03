@@ -7,7 +7,11 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
+<<<<<<< Updated upstream
 import Swiper, { Navigation, Pagination, Autoplay, EffectFade, Thumbs} from 'swiper';
+=======
+import Swiper, { Navigation, Pagination, Autoplay, EffectFade, Thumbs} from "swiper";
+>>>>>>> Stashed changes
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -180,6 +184,59 @@ if (document.querySelector(".product-page-min__slider")) {
 	});
 }
 
+<<<<<<< Updated upstream
+=======
+      // События
+      on: {},
+    });
+  }
+  if (document.querySelector(".swiper")) {
+    // Указываем скласс нужного слайдера
+    // Создаем слайдер
+    let imyageSlider = new Swiper(".images-product__slider", {
+      // Указываем скласс нужного слайдера
+      // Подключаем модули слайдера
+      // для конкретного случая
+      modules: [Navigation],
+      observer: true,
+      observeParents: true,
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      speed: 800,
+      // Кнопки "влево/вправо"
+      navigation: {
+      },
+      // События
+      on: {},
+    });
+	}
+}
+	let sliderScrollItems = document.querySelectorAll('.swiper_scroll');
+	if (sliderScrollItems.length > 0) {
+		for (let index = 0; index < sliderScrollItems.length; index++) {
+			const sliderScrollItem = sliderScrollItems[index];
+			const sliderScrollBar = sliderScrollItem.querySelector('.swiper-scrollbar');
+			const sliderScroll = new Swiper(sliderScrollItem, {
+				observer: true,
+				observeParents: true,
+				direction: 'vertical',
+				slidesPerView: 'auto',
+				freeMode: {
+					enabled: true,
+				},
+				scrollbar: {
+					el: sliderScrollBar,
+					draggable: true,
+					snapOnRelease: false
+				},
+				mousewheel: {
+					releaseOnEdges: true,
+				},
+			});
+			sliderScroll.scrollbar.updateSize();
+		}
+	}
+>>>>>>> Stashed changes
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 
