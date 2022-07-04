@@ -10,8 +10,7 @@
 
 .product-page {
   &__slider {
-    width: 80%;
-    order: 2;
+    width: 100%;
     @media (max-width: $tablet) {
       width: 100%;
       height: 80%;
@@ -38,8 +37,8 @@
 
 .product-page-min {
   &__slider {
-    width: 20%;
-    order: 1;
+    position: absolute;
+    right: 80%;
     @media (max-width: $tablet) {
       width: 100%;
       height: 20%;
