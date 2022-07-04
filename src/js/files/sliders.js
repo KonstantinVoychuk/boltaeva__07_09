@@ -8,11 +8,8 @@
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
 import Swiper, { Navigation, Pagination, Autoplay, EffectFade, Thumbs} from 'swiper';
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 71e5c04309e964de3ba7f9e2a7f8a09511375251
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -150,18 +147,6 @@ if (document.querySelector(".product-page-min__slider")) {
 	  // Указываем скласс нужного слайдера
 	  // Подключаем модули слайдера
 	  // для конкретного случая
-<<<<<<< HEAD
-	  modules: [Thumbs],
-	  observer: true,
-	  observeParents: true,
-	  slidesPerView: 4,
-	  spaceBetween: 30,
-	  speed: 800,
-	  // События
-	  on: {},
-	});
-
-=======
 //	  modules: [Thumbs],
 //	  observer: true,
 //	  observeParents: true,
@@ -175,25 +160,16 @@ if (document.querySelector(".product-page-min__slider")) {
 	  on: {},
 	});
 
->>>>>>> 71e5c04309e964de3ba7f9e2a7f8a09511375251
 	new Swiper(".product-page__slider", {
 	  // Указываем скласс нужного слайдера
 	  // Подключаем модули слайдера
 	  // для конкретного случая
 	  modules: [Navigation, Thumbs],
-<<<<<<< HEAD
-	  observer: true,
-	  observeParents: true,
-	  slidesPerView: 1,
-	  spaceBetween: 30,
-	  speed: 800,
-=======
 //	  observer: true,
 //	  observeParents: true,
 	  slidesPerView: 1,
 //	  spaceBetween: 30,
 //	  speed: 800,
->>>>>>> 71e5c04309e964de3ba7f9e2a7f8a09511375251
 
 	  // Кнопки "влево/вправо"
 	  navigation: {

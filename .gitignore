@@ -1,9 +1,1 @@
-phpmailer/
-package-lock.json
-node_modules/
-.gitignore
-dist/
-version.json
-undefined
-**/*.zip
-**/*.rar
+node_modules
