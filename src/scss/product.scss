@@ -39,10 +39,9 @@
 	}
 
 	&__wrapper {
-		max-width: 100px;
-		max-height: 300px;
-//		display: flex;
-//		flex-direction: column;
+
+	display: flex;
+	flex-direction: column;
 	}
 
 	&__slide {
