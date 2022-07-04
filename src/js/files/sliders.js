@@ -145,12 +145,15 @@ if (document.querySelector(".product-page-min__slider")) {
 	  // Указываем скласс нужного слайдера
 	  // Подключаем модули слайдера
 	  // для конкретного случая
-	  modules: [Thumbs],
-	  observer: true,
-	  observeParents: true,
-	  slidesPerView: 4,
-	  spaceBetween: 30,
-	  speed: 800,
+//	  modules: [Thumbs],
+//	  observer: true,
+//	  observeParents: true,
+	  slidesPerView: 5,
+//	  spaceBetween: 0,
+	  direction: 'vertical',
+//	  speed: 800,
+//	direction: 'vertical',
+
 	  // События
 	  on: {},
 	});
@@ -160,11 +163,11 @@ if (document.querySelector(".product-page-min__slider")) {
 	  // Подключаем модули слайдера
 	  // для конкретного случая
 	  modules: [Navigation, Thumbs],
-	  observer: true,
-	  observeParents: true,
+//	  observer: true,
+//	  observeParents: true,
 	  slidesPerView: 1,
-	  spaceBetween: 30,
-	  speed: 800,
+//	  spaceBetween: 30,
+//	  speed: 800,
 
 	  // Кнопки "влево/вправо"
 	  navigation: {
