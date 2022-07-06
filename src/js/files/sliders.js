@@ -150,11 +150,10 @@ if (document.querySelector(".product-page-min__slider")) {
 //	  modules: [Thumbs],
 //	  observer: true,
 //	  observeParents: true,
-	  slidesPerView: 5,
-//	  spaceBetween: 0,
+	  slidesPerView: 3,
+//	  spaceBetween: 10,
 //	  direction: 'vertical',
 //	  speed: 800,
-//	direction: 'vertical',
 
 	  // События
 	  on: {},
