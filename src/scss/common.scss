@@ -1,1 +1,13 @@
 // Заголовки, общие БЄМ блоки и проче...
+.title{
+		@include adaptiveValue("font-size",48,36,768,480,1);
+		line-height: 120%;
+		color: #555;
+		
+}
+.breadcrumbs{
+	display: flex;
+	& span{
+		margin-left: 15px;
+	}
+}
