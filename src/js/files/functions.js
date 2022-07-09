@@ -6,7 +6,7 @@ import { flsModules } from "./modules.js";
 
 // Контент страницы "delivery"
 export function deliveryDisplay () {
-	if (document.querySelector(".delivery__container")) {
+	if (document.querySelector(".delivery__container-smal")) {
 		const deliveryData = {
 			"breadcrumbs": "link_to_breadcrumbs",
 			"title": "Delivery information",
@@ -30,11 +30,11 @@ export function deliveryDisplay () {
 		// Вывод данных страницы "delivery"  ----------------------------------------------
 		function displayContent () {
 			document.querySelector('.delivery__title').innerText = deliveryData.title;
-			document.querySelector('.delivery__img').src = deliveryData.image;
+			document.querySelector('.delivery-img').src = deliveryData.image;
 			document.querySelector('.delivery__subtitle').innerText = deliveryData.subtitle;
 			let listData = '';
 				deliveryData.list.forEach(item => {
-				listData += `<li>${item}</li>`;
+				listData += `<li class="delivery__item">${item}</li>`;
 		});
 		document.querySelector('.delivery-list').innerHTML = listData;
 	}

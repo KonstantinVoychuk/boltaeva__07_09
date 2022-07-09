@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"Delivery" })
+@@include('html/_head.htm',{ "title":"Delivery" })
 
-  <body>
-    <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page">
-        <div class="delivery__container">
-          <div class="delivery__breadcrumbs"></div>
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <section class="delivery">
+        <div class="delivery__container-smal">
+      <a href="#" onclick="history.back();return true;" class="breadcrumbs icon-arr-left"><span>To back page</span></a>
+         
           <!-- /.delivery__breadcrumbs -->
           <h2 class="delivery__title title">poiuy</h2>
           <!-- /.delivery__title title -->
-          <div>
-				<img class="delivery__img" src="" alt="">
-			 </div>
+          <div class="delivery__img">
+            <img class="delivery-img" src="" alt="">
+          </div>
           <!-- /.delivery__img -->
           <div class="delivery__items">
             <div class="delivery__subtitle"></div>
             <!-- /.delivery__subtitle -->
             <ul class="delivery-list">
-<!--             <li class="delivery__item"></li>--> 
               <!-- /.delivery__item -->
             </ul>
             <!-- /.delivery-list -->
           </div>
           <!-- /.delivery-items -->
         </div>
-      </main>
-      @@include('html/_footer.htm',{})
-    </div>
-    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-  </body>
+      </section>
+      <!-- /.delivery -->
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+
+</body>
+
 </html>
