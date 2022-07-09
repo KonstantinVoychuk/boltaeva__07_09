@@ -1,195 +1,202 @@
 //====================================================================================================
 .header {
-	position: absolute;
-	width: 100%;
-	color: #555;
-	}
+  position: absolute;
+  width: 100%;
+  color: #555;
+}
 .planka {
-		position: fixed;
-		background: #F5ECE3;
-		width: 100%;
-		height: 120px;
-		border-bottom: 1px solid rgb(211, 211, 211);
-		z-index: 2;
-	}
-	.main-menu {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		padding: 50px 70px 0 70px;
-		@media (max-width: 992px){
-			padding: 50px 30px 0 30px;
-			}
-		z-index: 2;
-		&__left {
-			display: flex;
-			@include adaptiveValue("gap",48,14,1920,768,1);
-		}
-		&__logo {
-			}
-		&__right {
-			display: flex;
-			@include adaptiveValue("gap",24,14,1920,768,1);
-		}
-		&__right-pd {
-			padding-right: 24px;
-			@include adaptiveValue("padding-right",24,4,1920,768,1);
-		}
-	}
+  position: fixed;
+  background: #f5ece3;
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid rgb(211, 211, 211);
+  z-index: 2;
+  &__a {
+    z-index: 4;
+  }
+}
+.main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 70px 0 70px;
+  @media (max-width: 992px) {
+    padding: 50px 30px 0 30px;
+  }
+  z-index: 2;
+  &__left {
+    display: flex;
+    @include adaptiveValue("gap", 48, 14, 1920, 768, 1);
+  }
+  &__logo {
+  }
+  &__right {
+    display: flex;
+    @include adaptiveValue("gap", 24, 14, 1920, 768, 1);
+  }
+  &__right-pd {
+    padding-right: 24px;
+    @include adaptiveValue("padding-right", 24, 4, 1920, 768, 1);
+  }
+}
 
-	//====================================================================================================
-	
-	//Burger (кнопка)
-	
-	.icon-menu {
-		display: none;
-		@media (max-width: $mobile) {
-			display: block;
-			top: 20px;
-			left: 50px;
-			position: fixed;
-			width: rem(24);
-			height: rem(12);
-			background: none;
-			cursor: pointer;
-			z-index: 5;
-			span {width: 0;}
-			&::before,
-			&::after {
-				content: "";
-				transition: all 0.5s ease 0s;
-				right: 0;
-				position: absolute;
-				width: 100%;
-				height: rem(2);
-				background: #555;
-			}
-			&::before {
-				top: 0;
-			}
-			&::after {
-				bottom: 0;
-			}
-			span {
-				top: calc(50% - rem(1));
-			}
-			.menu-open & {
-				span {
-					width: 0;
-				}
-				&::before,
-				&::after {
-				}
-				&::before {
-					top: calc(50% - rem(1));
-					transform: rotate(-45deg);
-				}
-				&::after {
-					bottom: calc(50% - rem(1));
-					transform: rotate(45deg);
-				}
-			}
-		}
-	}
-	
-	
-	//Классы элементов бургера ------------------------------------------------------------------------
-	
-	.menu__body {
-		display: none;
-	}
-	// Для закрытого бургера -----------------------------------------------------------------
-	@media (max-width: $mobile) {
-		.main-menu__left, .link-not-burger {
-			display: none;
-		}
-		
-		.main-menu__logo {
-			@include adaptiveValue("margin-left",280,60,768,320,1);
-		}
-		.menu__body {
-			display: block;
-		}
-	//Для открытого бургера -------------------------------------------------------------
-	
-	.main-menu-burger {
-		position: fixed;
-		width: 100%;
-		height: 50px;
-		display: flex;
-		justify-content: space-between;
-		&__block-right {
-			display: flex;
-			justify-content: space-between;
-			@include adaptiveValue("gap",32,18,768,320,1);
-		}
-		padding: 47px 30px 45px 70px;
-		background: #F5ECE3;
-		border-bottom: 2px solid hsla(0, 0%, 0%, 0.05);
-	}
-	
-	.main-menu-burger {
-		color: $mainColor;
-	}
+//====================================================================================================
 
-.header {
-			&__menu {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-			}
-		}
-.menu {
-			&__icon {
-				top: 50px;
-				left: 30px;
-			}
-			&__body {
-				position: fixed;
-				width: 100%;height: 100%;top: 0;left: -100%;
-				overflow: auto;
-				z-index: 4;
-				transition: left 0.5s ease 0s;
-				.menu-open & {
-					left: 0;
-				}
-			}
-			&__item-search{
-				font-size: 20px;
-			}
+//Burger (кнопка)
 
-			&__item-logo {
-				@include adaptiveValue("font-size",14,10,768,320,1);
-			}
-			&__item-block-right{
-				font-size: 16px;
-			}
-			&__list {
-						padding: 120px 0px 41px 10px;
-						background: #F5ECE3;
-						text-align: center;
-						font-size: 24px;
-						color: $mainColor;
-			}
-			&__list > li {
-				margin-bottom: 35px;
-			}
-			&__list > li:last-child {
-				margin-bottom: 0;
-			}
-			&__item {
-			}
-			&__link {
-				font-size: rem(20);
-			}
-		}
-		.icon-menu {
-		}
-	}
-	
+.icon-menu {
+  display: none;
+  @media (max-width: $mobile) {
+    display: block;
+    top: 20px;
+    left: 50px;
+    position: fixed;
+    width: rem(24);
+    height: rem(12);
+    background: none;
+    cursor: pointer;
+    z-index: 5;
+    span {
+      width: 0;
+    }
+    &::before,
+    &::after {
+      content: "";
+      transition: all 0.5s ease 0s;
+      right: 0;
+      position: absolute;
+      width: 100%;
+      height: rem(2);
+      background: #555;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    span {
+      top: calc(50% - rem(1));
+    }
+    .menu-open & {
+      span {
+        width: 0;
+      }
+      &::before,
+      &::after {
+      }
+      &::before {
+        top: calc(50% - rem(1));
+        transform: rotate(-45deg);
+      }
+      &::after {
+        bottom: calc(50% - rem(1));
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+//Классы элементов бургера ------------------------------------------------------------------------
+
+.menu__body {
+  display: none;
+}
+// Для закрытого бургера -----------------------------------------------------------------
+@media (max-width: $mobile) {
+  .main-menu__left,
+  .link-not-burger {
+    display: none;
+  }
+
+  .main-menu__logo {
+    @include adaptiveValue("margin-left", 280, 60, 768, 320, 1);
+  }
+  .menu__body {
+    display: block;
+  }
+  //Для открытого бургера -------------------------------------------------------------
+
+  .main-menu-burger {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    &__block-right {
+      display: flex;
+      justify-content: space-between;
+      @include adaptiveValue("gap", 32, 18, 768, 320, 1);
+    }
+    padding: 47px 30px 45px 70px;
+    background: #f5ece3;
+    border-bottom: 2px solid hsla(0, 0%, 0%, 0.05);
+  }
+
+  .main-menu-burger {
+    color: $mainColor;
+  }
+
+  .header {
+    &__menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+  .menu {
+    &__icon {
+      top: 50px;
+      left: 30px;
+    }
+    &__body {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      overflow: auto;
+      z-index: 4;
+      transition: left 0.5s ease 0s;
+      .menu-open & {
+        left: 0;
+      }
+    }
+    &__item-search {
+      font-size: 20px;
+    }
+
+    &__item-logo {
+      @include adaptiveValue("font-size", 14, 10, 768, 320, 1);
+    }
+    &__item-block-right {
+      font-size: 16px;
+    }
+    &__list {
+      padding: 120px 0px 41px 10px;
+      background: #f5ece3;
+      text-align: center;
+      font-size: 24px;
+      color: $mainColor;
+    }
+    &__list > li {
+      margin-bottom: 35px;
+    }
+    &__list > li:last-child {
+      margin-bottom: 0;
+    }
+    &__item {
+    }
+    &__link {
+      font-size: rem(20);
+    }
+  }
+  .icon-menu {
+  }
+}
 
 //====================================================================================================
