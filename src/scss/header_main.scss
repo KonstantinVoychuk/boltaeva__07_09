@@ -106,7 +106,7 @@
 			display: none;
 		}
 		.main-menu__logo {
-			@include adaptiveValue("padding-left",280,60,768,320,1);
+			@include adaptiveValue("margin-left",280,60,768,320,1);
 		}
 		
 	//Для открытого бургера -------------------------------------------------------------
