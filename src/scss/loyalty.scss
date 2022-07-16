@@ -1,0 +1,33 @@
+.loyalty {
+	margin-top: 150px;
+	/* .loyalty__container-smal */
+	&__container-smal {
+	}
+	/* .loyalty__title */
+	&__title {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	/* .loyalty__text */
+	&__text {
+		@include adaptiveValue("margin-bottom", 50, 20);
+	}
+}
+.loyalty-vcompany {
+	display: flex;
+	justify-content: space-between;
+	gap: rem(40);
+	flex-wrap: wrap;
+	@media (max-width: rem(600)){
+		flex-direction:column;
+		align-items: center;
+	}
+	@include adaptiveValue("margin-bottom", 70, 40);
+	/* .loyalty-vcompany__num */
+	&__num {
+		font-size: 96px;
+		line-height: 110%;
+		letter-spacing: -0.03em;
+		color: #AC8F78;
+	}
+}
