@@ -6,3 +6,4 @@
 закінчив сторінку "Working process"
 закінчив сторінку "Loyalty program"
 початок роботи над сторінкою "Contacts"
+початок роботи над Popap

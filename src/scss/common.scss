@@ -90,3 +90,16 @@
 		}
 	}
 }
+.but{
+	background: #EEE4DA;
+	backdrop-filter: blur(14px);
+	border-radius: rem(66);
+	display: flex;
+	padding: rem(31) rem(100) ;
+	position: relative;
+	margin: 0 auto;
+}
+.but-l{
+	padding: rem(21) rem(65) rem(21) rem(40) ;
+	font-size: rem(20);
+}

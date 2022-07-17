@@ -1,20 +1,10 @@
-.partnership__popap{
-	background: #EEE4DA;
-	backdrop-filter: blur(14px);
-	border-radius: 66px;
-	display: flex;
-	padding: rem(21) rem(65) rem(21) rem(40) ;
-	font-size: 20px;
-	position: relative;
-	margin: 0 auto;
 
-}
 .icon-arr-right::before{
 		position: absolute;
 	  top: 38%;
     right: rem(32);
-    font-size: 13px;
+    font-size: rem(13);
 	}
-.partnership__but{
+.partnership__butons{
 	@include adaptiveValue(margin-bottom, 70, 50);
 }
