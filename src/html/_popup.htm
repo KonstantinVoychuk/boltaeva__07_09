@@ -1,37 +1,251 @@
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close icon-krestik"></button>
-			<div class="popup__body">
-				<div class="popup__logo icon-logo"></div>
-				<!-- /.logo -->
-				<div class="popup__title">Thanks</div>
-				<!-- /.popup__title -->
-				<div class="popup__text popup__text-1">We have already received your application and will contact you soon!</div>
-				<!-- /.popup__text -->
-				<button class="popup__but but">Сontinue</button>
-			</div>
-		</div>
-	</div>
+<!--Попап Благодарность -->
+<div id="thanks" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button
+        data-close
+        type="button"
+        class="popup__close icon-krestik"
+      ></button>
+      <div class="popup__body">
+        <div class="popup__logo icon-logo"></div>
+        <!-- /.logo -->
+        <div class="popup__title">Thanks</div>
+        <!-- /.popup__title -->
+        <div class="popup__text popup__text-1">
+          We have already received your application and will contact you soon!
+        </div>
+        <!-- /.popup__text -->
+        <button data-popup="#partner" class="popup__but but">Сontinue</button>
+      </div>
+    </div>
+  </div>
 </div>
-
-<div id="popup1" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text1
-			</div>
-		</div>
-	</div>
+<!--Попап  Стань партнером-->
+<div id="partner" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button
+        data-close
+        type="button"
+        class="popup__close icon-krestik"
+      ></button>
+      <div class="popup__body">
+        <div class="popup__logo icon-logo"></div>
+        <!-- /.logo -->
+        <div class="popup__title">Become a partner</div>
+        <!-- /.popup__title -->
+        <div class="popup__text popup__text-1">
+          Leave your contact details and our managers will contact you
+        </div>
+        <!-- /.popup__text -->
+        <form action="#" class="popup__form">
+          <input
+            autocomplete="off"
+            type="tel"
+            name="form[]"
+            data-error="Ошибка"
+            placeholder="Your contact number"
+            class="input popup__input"
+          />
+        </form>
+        <!-- /.popup__form -->
+        <button data-popup="#thanks" class="popup__but but">
+          Leave a request
+        </button>
+        <p class="popup__min-text">
+          I agree with the rules of personal data processing
+        </p>
+        <!-- /.popup__min-text -->
+      </div>
+    </div>
+  </div>
 </div>
-<div id="popup2" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text2
-			</div>
-		</div>
-	</div>
+<!--Попап Регістрація-->
+<div id="registration" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button
+        data-close
+        type="button"
+        class="popup__close icon-krestik"
+      ></button>
+      <div class="popup__body">
+        <div class="popup__logo icon-logo"></div>
+        <!-- /.logo -->
+        <div class="popup__title">Registration</div>
+        <!-- /.popup__title -->
+        <div class="popup__text popup__text-2">
+          If this is your first time on the site, then you should fill out a
+          questionnaire so that we can keep a history of your orders
+        </div>
+        <!-- /.popup__text -->
+        <form action="#" class="popup__form">
+          <input
+            autocomplete="off"
+            type="text"
+            name="form[]"
+            data-error="Ошибка"
+            placeholder="Your name"
+            class="input popup__input"
+          />
+          <input
+            autocomplete="off"
+            type="email"
+            name="form[]"
+            data-error="Ошибка"
+            placeholder="E-Mail"
+            class="input popup__input"
+          />
+          <input
+            autocomplete="off"
+            type="tel"
+            name="form[]"
+            data-error="Ошибка"
+            placeholder="Contact number"
+            class="input popup__input"
+          />
+          <input
+            autocomplete="off"
+            type="password"
+            name="form[]"
+            data-error="Ошибка"
+            placeholder="Password"
+            class="input popup__input"
+          />
+          <input
+            autocomplete="off"
+            type="text"
+            name="form[]"
+            data-error="Ошибка"
+            placeholder="Country"
+            class="input popup__input"
+          />
+          <input
+            autocomplete="off"
+            type="text"
+            name="form[]"
+            data-error="Ошибка"
+            placeholder="City"
+            class="input popup__input"
+          />
+        </form>
+        <!-- /.popup__form -->
+        <button class="popup__but but">Сomplete registration</button>
+        <a
+          href="#authorization"
+          data-popup="#authorization"
+          class="popup__link icon-user"
+          >Log-In</a
+        >
+        <!-- /.popup__link -->
+        <p class="popup__min-text">
+          I agree with the rules of personal data processing
+        </p>
+        <!-- /.popup__min-text -->
+      </div>
+    </div>
+  </div>
+</div>
+<!--Попап  Авторизація-->
+<div id="authorization" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button
+        data-close
+        type="button"
+        class="popup__close icon-krestik"
+      ></button>
+      <div class="popup__body">
+        <div class="popup__logo icon-logo"></div>
+        <!-- /.logo -->
+        <div class="popup__title">Authorization</div>
+        <!-- /.popup__title -->
+        <div class="popup__text popup__text-2">
+          Please enter your username and password from your account to log in,
+          or register
+        </div>
+        <!-- /.popup__text -->
+        <form action="#" class="popup__form">
+          <input
+            autocomplete="off"
+            type="email"
+            name="form[]"
+            data-error="Ошибка"
+            placeholder="Your E-Mail"
+            class="input popup__input"
+          />
+          <label class="popup__pass">
+            <input
+              autocomplete="off"
+              type="password"
+              name="form[]"
+              data-error="Ошибка"
+              placeholder="Password"
+              class="input popup__input"
+            />
+            <a
+              href="#recovery"
+              data-popup="#recovery"
+              class="popup__link popup-pass icon-vopros"
+              >Forgot your password?</a
+            >
+          </label>
+        </form>
+        <!-- /.popup__form -->
+        <button class="popup__but but">Log-in</button>
+        <a
+          href="#registration"
+          data-popup="#registration"
+          class="popup__link icon-user"
+          >Sign in</a
+        >
+        <!-- /.popup__link -->
+        <p class="popup__min-text">
+          I agree with the rules of personal data processing
+        </p>
+        <!-- /.popup__min-text -->
+      </div>
+    </div>
+  </div>
+</div>
+<!--Попап Відновлення паролю-->
+<div id="recovery" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <button
+        data-close
+        type="button"
+        class="popup__close icon-krestik"
+      ></button>
+      <div class="popup__body">
+        <div class="popup__logo icon-logo"></div>
+        <!-- /.logo -->
+        <div class="popup__title">Password recovery</div>
+        <!-- /.popup__title -->
+        <div class="popup__text popup__text-3">
+          Specify the email address to which you registered your account and we
+          will send instructions on restoring access to it
+        </div>
+        <!-- /.popup__text -->
+        <form action="#" class="popup__form">
+          <input
+            autocomplete="off"
+            type="email"
+            name="form[]"
+            data-error="Ошибка"
+            placeholder="Your E-Mail"
+            class="input popup__input"
+          />
+        </form>
+        <!-- /.popup__form -->
+        <button class="popup__but but">Restore access</button>
+        <!-- /.popup__link -->
+        <p class="popup__min-text">
+          I agree with the rules of personal data processing
+        </p>
+        <!-- /.popup__min-text -->
+      </div>
+    </div>
+  </div>
 </div>

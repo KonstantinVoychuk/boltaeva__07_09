@@ -12,9 +12,20 @@ textarea {
 	border-radius: 0 !important;
 	width: 100%;
 	display: block;
-	padding: 0px 20px;
-	border: 1px solid #eee;
+	padding: 26px 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	background: #F5ECE3;
+	&::placeholder{
+		font-size: 20px;
+		line-height: 110%;
+		color: #555555;
+		opacity: 0.5;
+	}
+	&::focus{
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
 	&._form-focus {
+
 	}
 	&._form-error {
 	}
@@ -22,4 +33,7 @@ textarea {
 textarea.input {
 	resize: none;
 	padding: 0px 0px;
+}
+input:focus{
+    outline: 1px solid rgba(0, 0, 0, 0.2);
 }
